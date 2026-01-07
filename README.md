@@ -35,7 +35,7 @@ Terraform – Infrastructure as Code
 
 ## Deployment Steps
 
-Clone the Repository
+1. Clone the Repository
 
 ```
 git clone https://github.com/patilrahul99/Highly-Available-Web-App.git
@@ -44,18 +44,18 @@ git clone https://github.com/patilrahul99/Highly-Available-Web-App.git
 - go to the directory:
 
 ```
-cd aws-ha-webapp
+cd Highly-Available-Web-App
 ```
 
-- Configure Variables
+2. Configure Variables
 
 Edit terraform.tfvars:
 
 region       = "ap-south-1"
 instance_type = "t3.micro"
 db_password  = "StrongPassword123!"
---Never commit real secrets to GitHub. Use AWS Secrets Manager in production.
 
+3. Execute
 - Initialize Terraform
 terraform init
 
